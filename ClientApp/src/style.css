@@ -33,3 +33,13 @@ tbody > tr:hover{
     background-color: #cf6565;
     transition-duration: 1s;
 }
+
+.newDataInput {
+    padding: 6px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}

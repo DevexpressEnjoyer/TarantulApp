@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import TarantulaTable from "./components/TarantulaTable.js";
-import AddTarantulaForm from "./components/AddTarantulaForm.js";
 
 function App() {
     const [tarantulas, setTarantulas] = useState([]);
@@ -79,6 +78,13 @@ function App() {
             <h1>Lista Ptaszników</h1>
             <TarantulaTable
                 tarantulas={tarantulas}
+                newName={newName}
+                newSpecies={newSpecies}
+                newVenomStrength={newVenomStrength}
+                setNewName={setNewName}
+                setNewSpecies={setNewSpecies}
+                setNewVenomStrength={setNewVenomStrength}
+                AddTarantula={AddTarantula}
                 editId={editId}
                 editName={editName}
                 editSpecies={editSpecies}
@@ -90,15 +96,6 @@ function App() {
                 SaveEdit={SaveEdit}
                 StartEdit={StartEdit}
                 DeleteTarantula={DeleteTarantula}
-            />
-            <AddTarantulaForm
-                newName={newName}
-                newSpecies={newSpecies}
-                newVenomStrength={newVenomStrength}
-                setNewName={setNewName}
-                setNewSpecies={setNewSpecies}
-                setNewVenomStrength={setNewVenomStrength}
-                AddTarantula={AddTarantula}
             />
         </div>
     );

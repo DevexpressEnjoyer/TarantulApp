@@ -4,3 +4,8 @@ build/
 *.log
 .cache/
 .env
+.vs/TarantulApp/v17/.wsuo
+.vs/slnx.sqlite
+.vs/TarantulApp/FileContentIndex/44d999a3-3564-471d-8764-5a11e40e964c.vsidx
+.vs/TarantulApp/v17/DocumentLayout.json
+.vs/VSWorkspaceState.json
